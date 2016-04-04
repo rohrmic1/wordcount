@@ -21,6 +21,7 @@
       // fire the API request
       $http.post('/start', {'url': userInput}).
         success(function(results) {
+          //$scope.urlerror = true;
           $log.log(results);
           getWordCount(results);
           $scope.wordcounts = null;
